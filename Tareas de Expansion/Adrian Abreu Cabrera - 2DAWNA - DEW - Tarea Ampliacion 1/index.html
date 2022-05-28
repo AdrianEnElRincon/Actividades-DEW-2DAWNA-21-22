@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1: The theme park, a virtual guide</title>
+</head>
+<body>
+    <h1>Activity 1: The theme park, a virtual guide</h1>
+    <p>
+        <strong>
+            1. Generate a data structure to represent the attractions of a theme park in a list of
+            Javascript structures as a constant named "ATTRACTIONS" in the "attractions.js" file,
+            the information to represent is reflected in the following brochure:
+        </strong>
+        <ul>
+            <li>The Noria:
+                <ul>
+                    <li>
+                        Description: Enjoy the views at this classic attraction that never disappoints.
+                    </li>
+                    <li>Minimum age: 8 years.</li>
+                </ul>
+            </li>
+            <li>The roller coaster:
+                <ul>
+                    <li>
+                        Description: Blazing speeds on a winding route through the mysteries of the
+                        McChun Mine
+                    </li>
+                    <li>Minimum age: 12 years.</li>
+                    <li>Minimum height: 130 cm.</li>
+                    <li>Maximum height: 210 cm.</li>
+                </ul>
+            </li>
+            <li>The House of Terror:
+                <ul>
+                    <li>
+                        Description: Legend has it that ghosts from other times gather in this house
+                        to give visitors a near-death experience.
+                    </li>
+                    <li>Minimum age: 12 years.</li>
+                </ul>
+            </li>
+            <li>The elevator up&down:
+                <ul>
+                    <li>
+                        Description: The inspector has not passed for a long time, that is why this
+                        elevator has such strange behavior, bumpy climbs and free fall from more than
+                        30 meters high. Does it go up or down? Yes, both.
+                    </li>
+                    <li>Minimum height: 130 cm.</li>
+                    <li>Minimum age: 10 years.</li>
+                </ul>
+            </li>
+            <li>FastSplash:
+                <ul>
+                    <li>
+                        Description: Do you want water? This roller coaster combines speed, water 
+                        and lots of fun.
+                    </li>
+                    <li>Minimum age: 8 years.</li>
+                </ul>
+            </li>
+            <li>Children's Kingdom:
+                <ul>
+                    <li>
+                        Description: The little ones will be able to enjoy a set of activities at
+                        their height.
+                    </li>
+                    <li>Minimum age: 3 years.</li>
+                    <li>Maximum age: 12 years. </li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <p>
+        <strong>
+            2. Generate an HTML page that meets the following requirements:
+        </strong>
+        <ul>
+            <li>Virtual guide: Create a form with the following fields:
+                <ul>
+                    <li>"Age" field, id and name: "age"</li>
+                    <li>"Height" field, id and name: "height"</li>
+                    <li>"Create my route" button, id: "submit"</li>
+                </ul>
+            </li>
+            <li>
+                Complete the code of the "filter" function in the "filter.js" file to add the necessary
+                conditions to only display the attractions that meet the conditions entered in the form.
+            </li>
+        </ul>
+    </p>
+    <h2>Your HTML code here:</h2>
+    <!-- Your code here: -->
+        <div>
+            <input type="text" id="age">
+            <input type="text" id="height">
+            <button id="submit">Submit</button>
+        </div>
+    <!-- don't touch the code from this point on -->
+    <div id="container">
+        
+    </div>
+    <script src="filter.js"></script>
+    <script src="attractions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

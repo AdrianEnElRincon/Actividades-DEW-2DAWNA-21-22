@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Actividad 1: Manipulación del DOM</title>
+  </head>
+
+  <style>
+    table {
+      border-collapse: collapse;
+      width: calc(100% - 4rem);
+      margin: auto;
+      text-align: center;
+    }
+
+    td, th {
+      border: 1px solid #ddd    
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    tr:hover {
+      background-color: #ddd;
+    }
+
+    th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      background-color: #04AA6D;
+      color: white;
+    }
+
+  </style>
+
+  <body>
+    <h1>Actividad 1: Manipulación del DOM</h1>
+    <p>En esta actividad mostraremos los datos de la variable employees en este HTML como una tabla. Construye todos los elementos haciendo uso de funciones js</p>
+    <p>En caso de que el campo de control sea 0, se debe mostrar el color de fuente de esa fila en color rojo</p>
+    <div id="table-container"></div>
+    <script>
+     let employees = [{"id":1,"name":"MIRIAM CASTIÑEIRA BREA","department":"IT","control":1},
+        {"id":2,"name":"GONZALO MULET FIGUERAS","department":"IT","control":1},
+        {"id":3,"name":"FRANCISCO JOSE GRAÑA BARBERA","department":"IT","control":1},
+        {"id":4,"name":"IRENE POMBO JORDA","department":"HR","control":0}];
+    </script>
+    <script src="actividad-1.js"></script>
+  </body>
+</html>

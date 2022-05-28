@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Actividad 0: Comenzamos</title>
+</head>
+
+<body>
+    <h1>Actividad 0: Comenzamos</h1>
+    <p>Muestra los datos de la variable employees haciendo uso de un alert por registro</p>
+    <p>En caso de que el campo de control sea 0, se debe mostrar un warning por consola indicando que el registro puede
+        estar corrupto</p>
+
+    <script>
+        var employees = [{ "id": 1, "name": "MIRIAM CASTIÑEIRA BREA", "department": "IT", "control": 1 }, { "id": 2, "name": "GONZALO MULET FIGUERAS", "department": "IT", "control": 1 }, { "id": 3, "name": "FRANCISCO JOSE GRAÑA BARBERA", "department": "IT", "control": 1 }, { "id": 4, "name": "IRENE POMBO JORDA", "department": "HR", "control": 0 }]
+        
+        employees.forEach(employee => {
+            if(employee.control === 1) {
+                alert('El empleado: ' + employee.name
+                + " del departamento: " + employee.department)
+            } else {
+                console.warn(`Los datos de ${employee.id} pueden estar corruptos`)
+            }
+        });
+    </script>
+    <script src="./actividad0.js"></script>
+</body>
+
+</html>

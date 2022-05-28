@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2: Looping through an array, calculating operations and writing their result in the document.</title>
+    <script src="jquery.js"></script>
+</head>
+<body>
+    <h1>Activity 2: Looping through an array, calculating operations and writing their result in the document.</h1>
+    <p>
+        <strong>
+            Batch processing: you will have to perform the operations indicated in the array on the
+            data contained. The possible operations together with their syntax are:
+        </strong>
+        <ul>
+            <li>Numeric:
+                <ul>
+                    <li>sum:
+                        <pre>{operation: "+", data: [1, 2, 3]} // result: 6</pre>
+                    </li>
+                    <li>multiplication:
+                        <pre>{operation: "*", data: [1, 2, 3]} // result: 6</pre>
+                    </li>
+                </ul>
+            </li>
+            <li>Arrays:
+                <ul>
+                    <li>
+                        add elements
+                        <pre>{operation: "push", data: [[1, 2, 3], 4, 5]} // result: [1, 2, 3, 4, 5]</pre>
+                    </li>
+                    <li>
+                        extract elements
+                        <pre>{operation: "filter", data: [[1, 2, 3, 4, 5], 2, 5]} // result: [1, 3, 4, 5]</pre>
+                    </li>
+                    
+                    <li>
+                        concatenate arrays:
+                        <pre>{operation: "merge", data: [[1, 2, 3], [4, 5], [6]]} // result: [1, 2, 3, 4, 5, 6]</pre>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+    <p>
+        In the case of arrays the result must be displayed as a string. Example:
+        <pre>"[1, 2, 3, 4]"</pre>
+    </p>
+    <p>
+        The number of operators can be variable. Example:
+        <pre>
+            const OPERATIONS = [
+                {operation: "push", data: [[1, 2, 3], 4]}
+                {operation: "+", data: [1, 2, 3]},
+                {operation: "+", data: [3]},
+                {operation: "*", data: [2, 3]},
+                {operation: "filter", data: [[1, 2, 3], 3]},
+                {operation: "merge", data: [[1, 2, 3], [4, 5], [6], [7]]},
+            ];
+        </pre>
+        Previous array will show:
+        <pre>
+            [1, 2, 3, 4]
+            6
+            3
+            6
+            [1, 2]
+            [1, 2, 3, 4, 5, 6, 7]
+        </pre>
+        Results
+        <pre id="results">
+            
+        </pre>
+    </p>
+    <script src="main.js"></script>
+</body>
+</html>

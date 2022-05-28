@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Actividad 3: Formularios y click event</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <script src="jquery.js"></script>
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <h1>Actividad 3: Formularios y click event</h1>
+    <p>Parte 1: Inserta campos ("Filas" y "Columnas") y un botón ("Generar tabla"). Cuando se cliquee el botón deberá: </p>
+      <ol>
+        <li>Eliminar table#generated si existiera </li>
+        <li>Añadir una tabla con tantas filas y columnas como los campos "Filas" y "Columnas" indiquen</li>
+        <li>Cada celda de la tabla debe contener un texto como: "Row: X, Col: Y", siendo X e Y los valores posicionales de dicha celda</li>
+        
+      </ol>
+      <p>Parte 2: Inserta un formulario con 2 campos ("Filas" y "Columnas") y un botón ("Generar tabla"). Cuando se cliquee el botón deberá: </p>
+      <ol>
+        <li>Añadir una tabla con tantas filas y columnas como los campos "Filas" y "Columnas" indiquen</li>
+        <li>Cada celda de la tabla debe contener un texto como: "Row: X, Col: Y", siendo X e Y los valores posicionales de dicha celda</li>
+      </ol>
+      <p>La parte 2 vale 1 punto </p>
+      <p>NOTA: Podemos utilizar la clase URL o el método Regex para capturar las variables GET, en caso de hacerlo usando un formulario</p>
+
+      <form action="/Parte 2/" method="get">
+        <input type="text" placeholder="Numero de filas" name="rowsInput">
+        <input type="text" placeholder="Numero de columnas" name="colsInput">
+        <button type="submit">Submit</button>
+      </form>
+      
+  </body>
+</html>

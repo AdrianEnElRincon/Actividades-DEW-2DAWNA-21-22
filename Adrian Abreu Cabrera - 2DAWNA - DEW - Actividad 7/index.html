@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 7 - Reproduccion de audio</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Actividad 7: La etiqueta audio + eventos</h1>
+    <p>Este es un reproductor musical con una lista de reproducción</p>
+    <ul>
+        <li>Añade un icono de play cuando se esté reproduciendo una canción en la playlist, a continuación del título de la
+            canción.</li>
+        <li>Añade un icono de pausa cuando esté pausada una canción en la playlist, a continuación del título de la canción.
+        </li>
+        <li>Añade controles a la <a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/audio">etiqueta audio</a>:
+            play/pause, atrás, adelante. (controla los finales de lista)</li>
+        <li>Cuando un audio termina, debe comenzar el siguiente automáticamente</li>
+    </ul>
+
+    <ol class="playlist">
+        <li>SoundHelix-Song-1.mp3 <i class="fa"></i></li>
+        <li>SoundHelix-Song-2.mp3 <i class="fa"></i></li>
+        <li>SoundHelix-Song-3.mp3 <i class="fa"></i></li>
+    </ol>
+    <audio>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3">
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3">
+        Your browser does not support the audio tag.
+    </audio>
+    <div class="controls">
+        <div class="song-info">
+            <div class="song-title">SoundHelix-Song-1</div>
+            <div class="song-progress">
+                <div class="progressbar"></div>
+                <div class="current-progress"></div>
+            </div>
+        </div>
+        <div class="control play"><i class="fa fa-play"></i></div>
+        <div class="control backward"><i class="fa fa-step-backward"></i></div>
+        <div class="control forward"><i class="fa fa-step-forward"></i></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

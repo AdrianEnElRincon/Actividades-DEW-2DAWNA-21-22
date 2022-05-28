@@ -1,0 +1,54 @@
+<style>
+    .navbar {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .nav-item {
+        background-color: grey;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        user-select: none;
+        cursor: pointer;
+    }
+
+    .nav-item:hover {
+        outline: 3px solid black;
+    }
+
+    .active {
+        background-color: black;
+    }
+
+    h1 {
+        text-align: center;
+    }
+</style>
+
+<h1>Actividad 6 - Modularización de codigo</h1>
+<div class="navbar">
+    <div class="nav-item active" id="tri">Triangulo</div>
+    <div class="nav-item" id="cir">Circulo</div>
+    <div class="nav-item" id="cua">Cuadrado</div>
+</div>
+
+<script>
+    $('.nav-item').on('click', function () {
+            $('.nav-item').removeClass('active')
+            $(this).addClass('active')
+
+            switch($(this).attr('id')) {
+                case 'tri':
+                    loadTriangle()
+                    break
+                case 'cir':
+                    loadCircle()
+                    break
+                case 'cua':
+                    loadSquare()
+                    break
+            }
+        })
+</script>

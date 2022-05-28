@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Actividad 5: Objetos</title>
+    
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Actividad 5: Objetos</h1>
+    <p>¡Esto va de clases! Sigue las especificaciones para crear algunas clases javascript:</p>
+      <ul>
+        <li>Crea la clase <strong>Window:</strong>
+          <ul>
+            <li>Cuyo <strong>constructor</strong> dibujará una ventana (shh! es un div, no se lo digas a nadie) en el body del html, recibirá un objeto llamado "options" con la siguiente especificación:
+              <ul>
+                <li>width: valor numérico que describe el ancho de la ventana en pixels.</li>
+                <li>height: valor numérico que describe el alto de la ventana en pixels.</li>
+                <li>posX: valor numérico que describe la posición de la ventana en pixels desde la izquierda (left).</li>
+                <li>posY: valor numérico que describe la posición de la ventana en pixels desde arriba (top).</li>
+              </ul>
+            </li>
+            <li>Añade el método <strong>setTitle</strong> que recibe un string y se lo añade a la cabecera de la ventana</li>
+            <li>Añade el método <strong>setContent</strong> que recibe un HTMLElement y se lo añade al cuerpo de la ventana</li>
+          </ul>
+        </li>
+        <li>Crea la clase <strong>Calculator:</strong>
+          <ul>
+            <li>Calculator hereda de la clase "Window".</li>
+            <li>Cuyo <strong>constructor</strong> recibirá lo mismo que "window" pero también inserta una calculadora que:
+              <ul>
+                <li>Tiene un display de datos.</li>
+                <li>Tiene botones de 0 a 9 y un punto (.) como separador decimal.</li>
+                <li>Botones para operaciones: sumar (+), restar (-), multiplicar (*), dividir (/)</li>
+                <li>Botón Reset (C)</li>
+                <li>Botón de resultado (=)</li>
+              </ul>
+            </li>
+            <li>Añade el código necesario para añadir funcionalidad a los botones
+              <ul>
+                <li>Apretando un botón lo muestra en el display.</li>
+                <li>Cuando se presiona un operador, limpia la pantalla y espera por el siguiente dato.</li>
+                <li>Cuando se presiona el botón Reset, se limpia el display y se resetean las operaciones pendientes.</li>
+                <li>Presionando el botón igual, se muestra en el display el resultado de las operaciones</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>Drag de ventana: añade el código que necesitas para arrastrar la ventana mientras clickas en la barra de título de la misma, hasta que sueltes el botón del ratón.</li>
+      </ul>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
