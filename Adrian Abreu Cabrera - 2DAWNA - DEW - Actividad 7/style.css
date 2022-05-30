@@ -82,5 +82,5 @@
 .fa-playing {
     padding: none;
     height: 1rem;
-    content: url('/img/playing.svg');
+    content: url('img/playing.svg');
 }
