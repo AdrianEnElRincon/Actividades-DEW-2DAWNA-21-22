@@ -159,7 +159,7 @@ class Calculator extends Window {
     constructor(options = { width: 500, height: 600, posX: 100, posY: 100}) {
         super({ width: options.width, height : options.height, posX : options.posX, posY : options.posY })
         this.setTitle('Calculadora')
-        this.setContent(Calculator.buildCaculator())
+        this.setContent(Calculator.buildCalculator())
         this.render()
     }
 
@@ -245,7 +245,7 @@ class Calculator extends Window {
      * 
      * @returns {Jquery<HTMLElement>} Cuerpo de la interfaz de la calculadora
      */
-    static buildCaculator() {
+    static buildCalculator() {
         const calculatorBody = $('<div />').addClass('calculator-body')
 
         $('<div />').attr('id', 'calculator-history').appendTo(calculatorBody)
